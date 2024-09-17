@@ -77,3 +77,8 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
 
 # Save the trained KNN model
 joblib.dump(knn_model, 'knn_model.pkl')
+
+from google.colab import files
+
+# Download the KNN model
+files.download('knn_model.pkl')
